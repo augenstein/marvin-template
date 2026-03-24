@@ -1,7 +1,6 @@
 # Goals
 
-<!-- SETUP NOT COMPLETE: This file has placeholder content -->
-<!-- MARVIN will update this during setup -->
+<!-- SETUP NOT COMPLETE: Tell MARVIN about your goals during setup -->
 
 Last updated: Not yet configured
 
@@ -9,34 +8,32 @@ Last updated: Not yet configured
 
 ## Work Goals
 
-Goals related to your job - KPIs, projects, professional development, team goals.
+<!-- Goals related to your job: KPIs, projects, professional development -->
 
-*Examples:*
-- Hit Q1 revenue target
-- Ship the new feature by March
-- Get promoted to senior
-- Improve team velocity by 20%
+| Goal | Target | Status | Notes |
+|------|--------|--------|-------|
+| *Example: Ship feature X* | *Q2* | *In progress* | |
 
 ---
 
 ## Personal Goals
 
-Goals for life outside work - health, hobbies, relationships, personal growth.
+<!-- Goals for life outside work: health, hobbies, learning -->
 
-*Examples:*
-- Walk 10k steps daily
-- Write a blog post every week
-- Read 24 books this year
-- Learn to play guitar
+| Goal | Target | Status | Notes |
+|------|--------|--------|-------|
+| *Example: Run a 5K* | *June* | *Not started* | |
 
 ---
 
-## Tracking
+## Monthly Tracking
 
-| Goal | Type | Status | Notes |
-|------|------|--------|-------|
-| Complete MARVIN setup | - | In progress | |
+<!-- Track output-based goals by month -->
+
+| Goal | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| | | | | | | | | | | | | |
 
 ---
 
-*Tell MARVIN about your goals during setup, and they'll appear here. You can update these anytime - just say "let's update my goals."*
+*Update goals anytime: "Let's update my goals." MARVIN checks progress during /start and /report.*
