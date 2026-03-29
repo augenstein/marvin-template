@@ -1,3 +1,5 @@
+> **Note:** This integration uses a standalone Python bot process. For a more modern approach to mobile access, see `docs/patterns/mobile-access.md` (coming in a future release). This integration still works but is considered legacy.
+
 # Telegram Integration
 
 Connect MARVIN to Telegram for a full AI assistant experience on mobile.

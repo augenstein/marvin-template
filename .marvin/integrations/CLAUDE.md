@@ -112,6 +112,22 @@ If an integration is read-only, still include the section stating "This integrat
 - [ ] Added integration to the table in `.marvin/integrations/README.md`
 - [ ] Tested on a fresh install
 
+## CLI Integration Pattern (Alternative)
+
+For tools with purpose-built CLIs, you can skip the MCP setup entirely and create a skill wrapper instead. See `docs/patterns/cli-integration.md` for the full pattern.
+
+**When to use CLI over MCP:**
+- The tool has a well-maintained CLI
+- Auth is simpler via the CLI
+- You need triage rules or priority logic (skills handle this better)
+
+**When to use MCP:**
+- No CLI exists
+- Real-time streaming is needed
+- The MCP server is vendor-maintained and reliable
+
+Both approaches are valid. CLI wrappers are simpler to set up and maintain.
+
 ## Reference
 
 See existing integrations for examples:

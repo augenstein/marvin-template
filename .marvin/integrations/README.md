@@ -4,6 +4,18 @@ This directory contains integrations that extend MARVIN's capabilities. Each int
 
 ---
 
+## Integration Philosophy
+
+MARVIN supports three integration tiers, in order of preference:
+
+1. **CLI tools** (preferred) -- Purpose-built CLIs maintained by tool vendors. Wrap them as skills for triage rules and workflows. See `docs/patterns/cli-integration.md`.
+2. **MCP servers** -- For tools without CLIs. The integrations below use this approach.
+3. **Custom scripts** -- Last resort for tools with neither CLI nor MCP.
+
+The integrations below are MCP-based and work well. As CLI alternatives become available for these tools, we'll add CLI wrapper skill examples alongside them.
+
+---
+
 ## Available Integrations
 
 | Integration | Description | Setup |
@@ -254,10 +266,12 @@ Here are some integrations we'd love to see:
 - **Figma** - Design files
 - **Airtable** - Spreadsheets and databases
 - **HubSpot** - CRM
-- **Todoist** - Task management
+- **Todoist** - Task management (CLI: `todoist-cli`)
 - **Obsidian** - Local markdown notes
 - **Raycast** - Quick actions
 - **Granola** - Meeting notes
+
+**Note:** Some of these tools have CLI alternatives that may work better as skill-wrapped CLIs instead of MCP servers. Check if the tool has a CLI before building an MCP integration. See `docs/patterns/cli-integration.md` for the CLI wrapper pattern.
 
 Want to build one? Pick from the list or add your own!
 
