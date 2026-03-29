@@ -259,7 +259,7 @@ Your workspace is yours. Add folders, files, projects, whatever you need.
 
 MARVIN connects to external tools through three tiers (in order of preference):
 
-1. **CLI tools** (preferred) - Purpose-built CLIs like `gws`, `gh`, `npx`. Wrap them as skills for triage rules and domain logic.
+1. **CLI tools** (preferred) - Purpose-built CLIs like `gws`, `gh`, `npx`. Wrap them as skills for triage rules and domain logic. See `docs/patterns/cli-integration.md` for how to wrap CLIs as skills.
 2. **MCP servers** - For tools without CLIs. Configure via Claude Code's MCP system.
 3. **Custom scripts** - Last resort. Only when no CLI or MCP option exists.
 
