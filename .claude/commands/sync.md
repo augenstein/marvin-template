@@ -26,18 +26,33 @@ Compare the template's files with the user's workspace:
 - `.claude/commands/` - Slash commands
 - `.claude/agents/` - Subagent definitions
 - `.claude/skills/` - Reusable skills
+- `docs/patterns/` - Architectural pattern docs
 
 **Files to NEVER sync (user's data):**
 - `state/` - User's goals and current state
 - `sessions/` - Session logs
 - `reports/` - Weekly reports
 - `content/` - User's content
-- `CLAUDE.md` - User's profile
+- `meetings/` - User's meeting notes
+- `personal/` - User's personal files
+- `CLAUDE.md` - User's profile (contains personal config)
 - `.env` - User's secrets
+- `.marvin-team/` - User's team config (if present)
 
 ### 3. Identify Changes
 
-For each file in the template's `.claude/commands/`, `.claude/agents/`, and `.claude/skills/`:
+For each file in the template's `.claude/commands/` and `.claude/agents/`:
+- If it doesn't exist in the workspace: NEW
+- If it exists but differs: CONFLICT (user's version wins)
+- If it's identical: UNCHANGED
+
+For each skill in the template's `.claude/skills/`:
+- Skills may be a single `.md` file or a directory containing `SKILL.md`
+- For single-file skills: compare the file directly
+- For directory skills: compare by checking if the directory exists. If SKILL.md differs, it's a CONFLICT
+- If the skill doesn't exist at all: NEW
+
+For each file in `docs/patterns/`:
 - If it doesn't exist in the workspace: NEW
 - If it exists but differs: CONFLICT (user's version wins)
 - If it's identical: UNCHANGED
